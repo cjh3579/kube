@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: webui
+  name: redit
+spec:
+  containers:
+  - image: redis
+    name: redit
+  

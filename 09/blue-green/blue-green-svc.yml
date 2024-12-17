@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: blue-green-sve
+spec:
+  selector:
+    app: web
+    version: blue
+  ports:
+  - port: 80
+    targetPort: 8080
